@@ -1,3 +1,3 @@
 export class RequestModel {
-  constructor(public person: string, public description: string, public type: string) {}
+  constructor(public userID: string, public description: string, public category: string, public quantity: Number, public location: String){}
 }
