@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {RequestModel} from '../shared/request.model';
 
 @Component({
   selector: 'app-request-list',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./request-list.component.css']
 })
 export class RequestListComponent implements OnInit {
-
+  requests: RequestModel[] = [new RequestModel('Thomas', 'fsdfsdfd', 'sdfdsfsdf')];
   constructor() { }
 
   ngOnInit() {
