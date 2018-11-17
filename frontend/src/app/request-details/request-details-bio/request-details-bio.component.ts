@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UserModel } from '../../shared/user.model';
-import { RequestModel } from '../../shared/request.model';
 
 
 @Component({
@@ -10,8 +9,8 @@ import { RequestModel } from '../../shared/request.model';
 })
 export class RequestDetailsBioComponent implements OnInit {
 
-  user : UserModel = new UserModel("mike","russia", "hey there", "http://www.evokinnovations.com/wp-content/uploads/2016/09/Mike-Headshot-2.jpeg");
-  request : RequestModel = new RequestModel("mike", "descritpion here", "food");
+  user : UserModel = new UserModel("Mike Brichko","Russia", "Born and raised in Mother Russia where I fought bears and drank a lot of spicy water.", "https://www.edmonton.ca/city_government/documents/Images/ward-11-councillor_800x494_rdax_500x309.jpg");
+
 
   constructor() { }
 

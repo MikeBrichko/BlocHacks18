@@ -1,0 +1,9 @@
+.request-details-page{
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+}
+
+app-request-details-content{
+    width:100%;
+}

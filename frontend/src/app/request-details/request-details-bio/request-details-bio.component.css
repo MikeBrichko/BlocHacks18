@@ -1,3 +1,14 @@
 .bio-container__image{
     height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.bio-container__image-container{
+    text-align: center;
+    padding: 1rem;
+}
+.bio-container{
+    width: 20rem;
+    margin-right: 2rem;
 }
