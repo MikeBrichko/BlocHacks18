@@ -2,15 +2,16 @@
   <div class="request-details-content__title-container">
     <h1>{{request.title}}</h1>
   </div>
-  <div class="request-details-content__location-container">
-    
-  </div>
-  <div class="request-details-content__quantity-container">
-  
+  <div *ngIf="request.quantity" class="request-details-content__quantity-container">
+    <p>{{request.quantity}}</p>
   </div>
   <div class="request-details-content__description-container">
-  
+    <p>{{request.category}}</p>
   </div>
+  <div class="request-details-content__location-container">
+    <p>{{request.description}}</p>
+  </div>
+
   <div class="request-details-content__location-container">
   
   </div>
