@@ -1,3 +1,7 @@
-<p>
-  request-list works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <app-request-card
+      *ngFor="let requestEl of requests"
+      [request]="requestEl"></app-request-card>
+  </div>
+</div>
