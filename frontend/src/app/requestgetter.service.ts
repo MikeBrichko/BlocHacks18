@@ -9,7 +9,7 @@ import { RequestModel } from './shared/request.model';
 
 export class RequestgetterService {
 
-  constructor(private http : HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   getRequests(){
     return this.http.get('https://blochacks2018.herokuapp.com/requests');

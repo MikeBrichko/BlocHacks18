@@ -11,10 +11,11 @@ export class RequestCardComponent implements OnInit {
   @Input() request: RequestModel;
   @Input() user: UserModel;
 
+  @Input() selectedCategory;
   constructor() { }
 
   ngOnInit() {
-    console.log(this.request);
+    this.selectedCategory = 'All';
   }
 
 }

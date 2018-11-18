@@ -1,8 +1,37 @@
-<div>
-  <div class="col-xs-12">
+<div class="row">
+  <div class="col-md-2">
+    <p></p>
+    <div class="card" style="width: 10rem;">
+      <div class="card-header">
+        Sort by type
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <input type="radio" name="category" value="All" (change)="radioCategoryHandler($event)">  All <br>
+          <input type="radio" name="category" value="Education" (change)="radioCategoryHandler($event)">  Education <br>
+          <input type="radio" name="category" value="Medical" (change)="radioCategoryHandler($event)">  Medical <br>
+          <input type="radio" name="category" value="Food" (change)="radioCategoryHandler($event)">  Food <br>
+          <input type="radio" name="category" value="Clothes" (change)="radioCategoryHandler($event)">  Clothing <br>
+          <input type="radio" name="category" value="Others" (change)="radioCategoryHandler($event)">  Others <br>
+        </li>
+      </ul>
+      <div class="card-header">
+        Sort by cost
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <input type="radio" name="cost" value="increasing" (change)="radioCostHandler($event)">  Increasing <br>
+          <input type="radio" name="cost" value="decreasing" (change)="radioCostHandler($event)">  Decreasing <br>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-10">
     <app-request-card
       *ngFor="let requestEl of requestList"
-      [user]="findUserById(requestEl.userId)"
-      [request]="requestEl"></app-request-card>
+      [request]="requestEl"
+    [user]="findUserById(requestEl.userId)"
+      [selectedCategory] = selectedCategory>
+    </app-request-card>
   </div>
 </div>
