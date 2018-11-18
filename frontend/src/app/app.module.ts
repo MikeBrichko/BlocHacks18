@@ -8,6 +8,8 @@ import { RequestDetailsComponent } from './request-details/request-details.compo
 import { RequestDetailsBioComponent } from './request-details/request-details-bio/request-details-bio.component';
 import { RequestDetailsContentComponent } from './request-details/request-details-content/request-details-content.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,10 @@ import { RequestDetailsContentComponent } from './request-details/request-detail
     RequestDetailsContentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDBkh1YIOLKzCAiaucNZ85GmlxihDVgKM0'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

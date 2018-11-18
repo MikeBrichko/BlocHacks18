@@ -1,6 +1,7 @@
 <div class="card card-body request-details-content">
   <div class="request-details-content__title-container">
-    <h1>{{request.title}}</h1>
+    <h1 class="request-details-content__title-container__header">{{request.title}}</h1>
+    <button type="button" class="btn btn-dark request-details-content__title-container__button">SUPPORT</button>
   </div>
   <div *ngIf="request.quantity" class="request-details-content__quantity-container">
     <p>{{request.quantity}}</p>
@@ -13,6 +14,8 @@
   </div>
 
   <div class="request-details-content__location-container">
-  
+    <agm-map [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
   </div>
 </div>
