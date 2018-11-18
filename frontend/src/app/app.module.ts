@@ -19,6 +19,8 @@ import { FeedComponent } from './feedback/feed/feed.component';
 import { FeedPostComponent } from './feedback/feed/feed-post/feed-post.component';
 import { StatisticDoughnutChartComponent } from './feedback/statistics/statistic-doughnut-chart/statistic-doughnut-chart.component';
 import {ChartsModule} from 'ng2-charts';
+import { StatisticsBarChartComponent } from './feedback/statistics/statistics-bar-chart/statistics-bar-chart.component';
+import { MoneyHandlerComponent } from './feedback/money-handler/money-handler.component';
 
 const routes: Routes = [
   {path: '', component: RequestListComponent},
@@ -40,7 +42,9 @@ const routes: Routes = [
     StatisticsComponent,
     FeedComponent,
     FeedPostComponent,
-    StatisticDoughnutChartComponent
+    StatisticDoughnutChartComponent,
+    StatisticsBarChartComponent,
+    MoneyHandlerComponent
   ],
   imports: [
     BrowserModule,
