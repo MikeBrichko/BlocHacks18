@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserModel } from '../../shared/user.model';
 
+import { UsergetterService } from '../../usergetter.service';
 
 @Component({
   selector: 'app-request-details-bio',
@@ -17,9 +18,14 @@ export class RequestDetailsBioComponent implements OnInit {
   };
 
 
-  constructor() { }
+  constructor(private usergetterService: UsergetterService) { }
 
   ngOnInit() {
+  }
+
+  getUserById(userId) {
+    this.usergetterService.getUserById(userId)
+      .subscribe((data: UserModel) => this.user = data);
   }
 
 }
