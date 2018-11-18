@@ -8,9 +8,11 @@ import {RequestModel} from '../../shared/request.model';
 })
 export class RequestCardComponent implements OnInit {
   @Input() request: RequestModel;
+  @Input() selectedCategory;
   constructor() { }
 
   ngOnInit() {
+    this.selectedCategory = 'All';
   }
 
 }

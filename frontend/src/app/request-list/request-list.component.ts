@@ -10,10 +10,16 @@ import { RequestgetterService } from '../requestgetter.service';
 })
 export class RequestListComponent implements OnInit {
   requestList: RequestModel[];
+  selectedCategory: string;
   constructor(private requestgetterService: RequestgetterService) { }
 
   ngOnInit() {
     this.getRequests();
+  }
+
+  radioCategoryHandler(event: any) {
+    this.selectedCategory = event.target.value;
+    console.log(this.selectedCategory);
   }
 
   getRequests() {
@@ -24,24 +30,13 @@ export class RequestListComponent implements OnInit {
       });
   }
 
-  radioCategoryHandler(event: any) {
-    this.getRequests();
-    let num;
-    let list: RequestModel[] = [];
-    for (num = 0; num < this.requestList.length; num++) {
-      if (this.requestList[num].category === event.target.value) {
-        list.push(this.requestList[num]);
-      }
-    }
-
-    this.requestList = list;
-  }
-
   radioCostHandler(event: any) {
     if (event.target.value === 'increasing') {
-      this.requestList.sort();
+      this.requestList.sort((a, b) => a.quantity > b.quantity ? -1 : a.quantity > b.quantity ? 1 : 0);
+      console.log(this.requestList);
     } else {
-
-    }this.requestList.sort();
+      this.requestList.sort((a, b) => a.quantity < b.quantity ? -1 : a.quantity > b.quantity ? 1 : 0);
+      console.log(this.requestList);
+    }
   }
 }
