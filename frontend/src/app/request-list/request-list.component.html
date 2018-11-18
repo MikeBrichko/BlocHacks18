@@ -1,5 +1,31 @@
-<div>
-  <div class="col-xs-12">
+<div class="row">
+  <div class="col-md-2">
+    <p></p>
+    <div class="card" style="width: 10rem;">
+      <div class="card-header">
+        Sort by type
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <label><input type="checkbox">  Education</label>
+          <label><input type="checkbox">  Medical</label>
+          <label><input type="checkbox">  Food</label>
+          <label><input type="checkbox">  Clothing</label>
+          <label><input type="checkbox">  Others</label>
+        </li>
+      </ul>
+      <div class="card-header">
+        Sort by cost
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <label><input type="checkbox">  Increasing</label>
+          <label><input type="checkbox">  Decreasing</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-10">
     <app-request-card
       *ngFor="let requestEl of requestList"
       [request]="requestEl"></app-request-card>

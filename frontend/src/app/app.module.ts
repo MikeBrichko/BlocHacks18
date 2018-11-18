@@ -11,8 +11,8 @@ import { RequestDetailsContentComponent } from './request-details/request-detail
 
 import { AgmCoreModule } from '@agm/core';
 import { NavbarComponent } from './navbar/navbar.component';
-import {Routes, RouterModule} from "@angular/router"
-import {HttpModule} from '@angular/http'
+import {Routes, RouterModule} from '@angular/router';
+import {HttpModule} from '@angular/http';
 
 const routes: Routes = [
   {path: '', component: RequestListComponent},

@@ -22,7 +22,6 @@ export class RequestListComponent implements OnInit {
         this.requestList = data;
         console.log(this.requestList);
       });
-    
   }
 
 }
