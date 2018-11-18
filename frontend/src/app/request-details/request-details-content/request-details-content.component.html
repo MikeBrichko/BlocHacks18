@@ -1,20 +1,22 @@
-<div class="card card-body request-details-content">
-  <div class="request-details-content__title-container">
-    <h1 class="request-details-content__title-container__header">{{request.title}}</h1>
-  </div>
-  <div *ngIf="request.quantity" class="request-details-content__quantity-container">
-    <p>{{request.quantity}}</p>
-  </div>
-  <div class="request-details-content__description-container">
-    <p>{{request.category}}</p>
-  </div>
-  <div class="request-details-content__location-container">
-    <p>{{request.description}}</p>
-  </div>
+<div class="background">
+  <div class="card card-body request-details-content">
+    <div class="request-details-content__title-container">
+      <h1 class="request-details-content__title-container__header">{{request.title}}</h1>
+    </div>
+    <div *ngIf="request.quantity" class="request-details-content__quantity-container">
+      <p>{{request.quantity}}</p>
+    </div>
+    <div class="request-details-content__description-container">
+      <p>{{request.category}}</p>
+    </div>
+    <div class="request-details-content__location-container">
+      <p>{{request.description}}</p>
+    </div>
 
-  <div class="request-details-content__location-container">
-    <agm-map [latitude]="lat" [longitude]="lng">
-      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-    </agm-map>
+    <div class="request-details-content__location-container">
+      <agm-map [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </div>
   </div>
 </div>
