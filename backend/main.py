@@ -8,6 +8,8 @@ app = Flask(__name__)
 
 from model import User
 from model import Request
+from flask import request
+
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
@@ -44,7 +46,7 @@ class RequestRepo:
         pass
 
     #Returns list
-    def get_all_requests(selfs):
+    def get_all_requests(self):
         request = Request.query.all()
         return request
 
@@ -62,7 +64,7 @@ class RequestRepo:
 def encode_request(request):
     #info = '{id: ' + str(request.id) + ', title: ' + request.title + ', owner_id: ' + str(request.owner_id) +  ', description: ' + request.description + ', category: ' + request.category + ', quantity: ' + request.quantity + ', location: ' + request.location + '}'
     info = {
-        'id ': request.id, 
+        'id': request.id, 
         'owner_id': request.owner_id,
         'title' : request.title,
         'description' : request.description,
@@ -73,10 +75,32 @@ def encode_request(request):
     
     return info
 
+def encode_user(userInfo):
+    info = {
+        'id': userInfo.id, 
+        'fullname': userInfo.fullname,
+        'bio' : userInfo.bio,
+        'country' : userInfo.country,
+        'picture' : userInfo.picture
+    }
+    return info
+
+def encode_all_user(userInfo):
+    info = {
+        'id': userInfo.id, 
+        'fullname': userInfo.fullname,
+        'bio' : userInfo.bio,
+        'country' : userInfo.country,
+        'picture' : userInfo.picture
+    }
+    return info
+
+
+
 
 @app.route('/')
 def hello_world():
-    return "hello"
+    return "hello1"
 
 @app.route('/requests')
 def get_all():
@@ -87,19 +111,37 @@ def get_all():
     #    all_requests = Request.query.filter_by(category=filterTag)
     #else:
     all_requests = Request.query.all() 
-
     arr = []
     for req in all_requests:
         arr.append(encode_request(req))
+    return jsonify(arr)
 
-    return jsonify(arr) 
+@app.route('/request/<id>')
+def get_specific_request(id):
+    request = Request.query.filter_by(id=id).first()
+    return jsonify(encode_request(request))
+
+@app.route('/user/<id>')
+def get_specific_user(id):
+    user = User.query.filter_by(id=id).first()
+    return jsonify(encode_user(user))
+
+@app.route('/users')
+def get_all_users():
+    users = User.query.all()
+    arr = []
+
+    for user in users:
+        arr.append(encode_user(user))
+    return jsonify(arr)
 
 
 
-#@app.route('/updateModel')
-#def update():
-#    model.db.create_all()
-#    return "Finished updated"
+
+@app.route('/updateModel')
+def update():
+    model.db.create_all()
+    return "Finished updated"
     
 # CORS
 @app.after_request
@@ -107,6 +149,7 @@ def after_request(response):
   response.headers.add('Access-Control-Allow-Origin', '*')
   response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
   response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+  response.headers.add('Content-type', 'application/json,charset=UTF-8')
   return response
 	
 if __name__ == '__main__':

@@ -1,5 +1,6 @@
-export interface RequestModel {
-  userID: string, 
+export interface RequestModel { 
+  id: Number,
+  userId: Number, 
   title: string, 
   description: string, 
   category: string, 

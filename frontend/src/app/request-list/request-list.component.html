@@ -30,6 +30,7 @@
     <app-request-card
       *ngFor="let requestEl of requestList"
       [request]="requestEl"
+    [user]="findUserById(requestEl.userId)"
       [selectedCategory] = selectedCategory>
     </app-request-card>
   </div>

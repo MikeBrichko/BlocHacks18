@@ -2,12 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a557190d-1f2b-4568-aa04-5bf12e9f0886" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-bio/request-details-bio.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-bio/request-details-bio.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-bio/request-details-bio.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-bio/request-details-bio.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-bio/request-details-bio.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-bio/request-details-bio.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-content/request-details-content.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-content/request-details-content.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-content/request-details-content.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-content/request-details-content.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-content/request-details-content.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-details/request-details-content/request-details-content.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/request-details/request-details.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-details/request-details.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/request-details/request-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-details/request-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/request-details/request-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-details/request-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/request-list/request-card/request-card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-list/request-card/request-card.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/request-list/request-card/request-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-list/request-card/request-card.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/request-list/request-card/request-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-list/request-card/request-card.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/requestgetter.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/requestgetter.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/request.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/request.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/usergetter.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/usergetter.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,27 +62,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1180" />
+          <entry key="html" value="1182" />
           <entry key="json" value="1" />
-          <entry key="ts" value="993" />
+          <entry key="ts" value="999" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1180" />
+          <entry key="HTML" value="1182" />
           <entry key="JSON" value="1" />
-          <entry key="TypeScript" value="993" />
+          <entry key="TypeScript" value="999" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/request-list/request-card/request-card.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="123">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -83,11 +97,6 @@
               <caret column="78" selection-start-column="78" selection-end-column="78" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -98,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/src/app/requestgetter.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -120,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="9" column="103" selection-start-line="9" selection-start-column="103" selection-end-line="9" selection-end-column="103" />
+            <state relative-caret-position="510">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -129,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+            <state relative-caret-position="204">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -158,9 +167,9 @@
         <option value="$PROJECT_DIR$/frontend/angular.json" />
         <option value="$PROJECT_DIR$/frontend/src/app/requestgetter.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/request-list/request-card/request-card.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/request-list/request-card/request-card.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.ts" />
       </list>
     </option>
   </component>
@@ -1395,13 +1404,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21120000" />
+    <option name="totallyTimeSpent" value="21869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1414,7 +1423,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1534,11 +1543,6 @@
           <caret column="78" selection-start-column="78" selection-end-column="78" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -1547,39 +1551,39 @@
     <entry file="file://$PROJECT_DIR$/frontend/src/app/requestgetter.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/request-list/request-card/request-card.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        <state relative-caret-position="204">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="103" selection-start-line="9" selection-start-column="103" selection-end-line="9" selection-end-column="103" />
+        <state relative-caret-position="510">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/request-list/request-list.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/request-list/request-card/request-card.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        <state relative-caret-position="123">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>

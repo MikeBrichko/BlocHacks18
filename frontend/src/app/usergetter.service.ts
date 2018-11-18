@@ -10,6 +10,10 @@ export class UsergetterService {
   constructor(private http : HttpClient) { }
 
   getUserById(userId){
-    return this.http.get(''+userId);
+    return this.http.get('https://blochacks2018.herokuapp.com/user/'+userId);
+  }
+
+  getUsers(){
+    return this.http.get('https://blochacks2018.herokuapp.com/users');
   }
 }

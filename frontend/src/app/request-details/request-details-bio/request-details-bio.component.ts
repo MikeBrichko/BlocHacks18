@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { UserModel } from '../../shared/user.model';
 
 import { UsergetterService } from '../../usergetter.service';
@@ -10,22 +10,24 @@ import { UsergetterService } from '../../usergetter.service';
 })
 export class RequestDetailsBioComponent implements OnInit {
 
-  user : UserModel = {
-    name:"Mike Brichko",
-    country: "Russia", 
-    bio:  "Born and raised in Mother Russia where I fought bears and drank a lot of spicy water.",
-    picture: "https://www.edmonton.ca/city_government/documents/Images/ward-11-councillor_800x494_rdax_500x309.jpg"
-  };
+  @Input() userid: Number;
+
+  user : UserModel;
 
 
   constructor(private usergetterService: UsergetterService) { }
 
   ngOnInit() {
+    this.getUserById(this.userid);
   }
 
   getUserById(userId) {
     this.usergetterService.getUserById(userId)
-      .subscribe((data: UserModel) => this.user = data);
+      .subscribe((data: UserModel) => 
+      {
+        this.user = data;
+        console.log(this.user);
+      });
   }
 
 }
