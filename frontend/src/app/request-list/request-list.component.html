@@ -2,6 +2,7 @@
   <div class="col-xs-12">
     <app-request-card
       *ngFor="let requestEl of requestList"
+      [user]="findUserById(requestEl.userId)"
       [request]="requestEl"></app-request-card>
   </div>
 </div>

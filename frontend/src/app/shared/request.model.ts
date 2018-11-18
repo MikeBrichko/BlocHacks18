@@ -1,5 +1,5 @@
 export interface RequestModel {
-  userID: string, 
+  userId: string, 
   title: string, 
   description: string, 
   category: string, 
