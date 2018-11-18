@@ -13,10 +13,18 @@ import { AgmCoreModule } from '@agm/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import {Routes, RouterModule} from '@angular/router';
 import {HttpModule} from '@angular/http';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { StatisticsComponent } from './feedback/statistics/statistics.component';
+import { FeedComponent } from './feedback/feed/feed.component';
+import { FeedPostComponent } from './feedback/feed/feed-post/feed-post.component';
+import { StatisticDoughnutChartComponent } from './feedback/statistics/statistic-doughnut-chart/statistic-doughnut-chart.component';
+import {ChartsModule} from 'ng2-charts';
 
 const routes: Routes = [
   {path: '', component: RequestListComponent},
-  {path: 'details', component: RequestDetailsComponent}
+  {path: 'details', component: RequestDetailsComponent},
+  {path: 'details/requestid/:requestid/userid/:userid', component: RequestDetailsComponent },
+  {path: 'feedback', component: FeedbackComponent}
 ];
 
 @NgModule({
@@ -27,10 +35,16 @@ const routes: Routes = [
     RequestDetailsComponent,
     RequestDetailsBioComponent,
     RequestDetailsContentComponent,
-    NavbarComponent
+    NavbarComponent,
+    FeedbackComponent,
+    StatisticsComponent,
+    FeedComponent,
+    FeedPostComponent,
+    StatisticDoughnutChartComponent
   ],
   imports: [
     BrowserModule,
+    ChartsModule,
     RouterModule.forRoot(routes),
     HttpModule,
     HttpClientModule,

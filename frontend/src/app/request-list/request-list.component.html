@@ -7,11 +7,12 @@
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          <label><input type="checkbox">  Education</label>
-          <label><input type="checkbox">  Medical</label>
-          <label><input type="checkbox">  Food</label>
-          <label><input type="checkbox">  Clothing</label>
-          <label><input type="checkbox">  Others</label>
+          <input type="radio" name="category" value="All" (change)="radioCategoryHandler($event)">  All <br>
+          <input type="radio" name="category" value="Education" (change)="radioCategoryHandler($event)">  Education <br>
+          <input type="radio" name="category" value="Medical" (change)="radioCategoryHandler($event)">  Medical <br>
+          <input type="radio" name="category" value="Food" (change)="radioCategoryHandler($event)">  Food <br>
+          <input type="radio" name="category" value="Clothes" (change)="radioCategoryHandler($event)">  Clothing <br>
+          <input type="radio" name="category" value="Others" (change)="radioCategoryHandler($event)">  Others <br>
         </li>
       </ul>
       <div class="card-header">
@@ -19,8 +20,8 @@
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          <label><input type="checkbox">  Increasing</label>
-          <label><input type="checkbox">  Decreasing</label>
+          <input type="radio" name="cost" value="increasing" (change)="radioCostHandler($event)">  Increasing <br>
+          <input type="radio" name="cost" value="decreasing" (change)="radioCostHandler($event)">  Decreasing <br>
         </li>
       </ul>
     </div>
@@ -28,6 +29,9 @@
   <div class="col-md-10">
     <app-request-card
       *ngFor="let requestEl of requestList"
-      [request]="requestEl"></app-request-card>
+      [request]="requestEl"
+    [user]="findUserById(requestEl.userId)"
+      [selectedCategory] = selectedCategory>
+    </app-request-card>
   </div>
 </div>
