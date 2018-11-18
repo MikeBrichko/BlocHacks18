@@ -16,7 +16,8 @@ import {HttpModule} from '@angular/http'
 
 const routes: Routes = [
   {path: '', component: RequestListComponent},
-  {path: 'details', component: RequestDetailsComponent}
+  {path: 'details', component: RequestDetailsComponent},
+  {path: 'details/requestid/:requestid/userid/:userid', component: RequestDetailsComponent }
 ];
 
 @NgModule({

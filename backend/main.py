@@ -116,6 +116,11 @@ def get_all():
         arr.append(encode_request(req))
     return jsonify(arr)
 
+@app.route('/request/<id>')
+def get_specific_request(id):
+    request = Request.query.filter_by(id=id).first()
+    return jsonify(encode_request(request))
+
 @app.route('/user/<id>')
 def get_specific_user(id):
     user = User.query.filter_by(id=id).first()
