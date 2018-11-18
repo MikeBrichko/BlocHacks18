@@ -14,6 +14,7 @@ export class RequestCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.request);
   }
 
 }
