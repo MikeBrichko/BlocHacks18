@@ -1,17 +1,17 @@
-.request-details-content__title-container__header{
-    display: inline-block;
-}
-
-.request-details-content__title-container__button{
-    float: right;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-}
-
 agm-map {
     height: 300px;
 }
 
 .request-details-content__location-container{
     margin-top: 20px;
+}
+
+@media only screen and (min-width: 801px){
+
+}
+@media only screen and (max-width: 800px){
+    .request-details-content{
+        border: none;
+        border-top: thin solid lightgray;
+    }
 }

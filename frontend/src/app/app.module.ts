@@ -9,6 +9,7 @@ import { RequestDetailsBioComponent } from './request-details/request-details-bi
 import { RequestDetailsContentComponent } from './request-details/request-details-content/request-details-content.component';
 
 import { AgmCoreModule } from '@agm/core';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AgmCoreModule } from '@agm/core';
     RequestCardComponent,
     RequestDetailsComponent,
     RequestDetailsBioComponent,
-    RequestDetailsContentComponent
+    RequestDetailsContentComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
