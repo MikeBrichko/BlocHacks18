@@ -7,7 +7,14 @@ import {RequestModel} from '../shared/request.model';
   styleUrls: ['./request-list.component.css']
 })
 export class RequestListComponent implements OnInit {
-  requests: RequestModel[] = [new RequestModel('Thomas', 'Title', 'Description', 'money', 100, 'Montreal')];
+  requests: RequestModel[] = [
+    {'userID': 'Thomas', 
+    'title': 'Title', 
+    'description': 'Description', 
+    'category': 'money', 
+    'quantity': 100, 
+    'location': 'Montreal'}
+  ];
   constructor() { }
 
   ngOnInit() {
