@@ -9,57 +9,53 @@
     margin-top: 16px;
 }
 
-.row-padding, .row-padding>.third, .row-padding>.twothird  {
-    padding: 0 8px;
-}
-
 .third {
     float: left;
     width: 20%;
+    padding: 5px;
 }
 
 .twothird {
     float: left;
     width: 80%;
+    padding: 5px;
 }
 
-.white {
+.request-box {
     color: #000;
     background-color: #fff;
-}
-
-.text-grey {
-    color: #757575;
-}
-
-.shadow1 {
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
-}
-
-.shadow2 {
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-}
-
-.userpic {
     position: relative;
 }
 
-.text-black {
+.request-picture {
+    position: relative;
+    height: 140px;
+}
+
+.userpic {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.text-title {
     color: #000;
+    font-size: x-large; 
+    margin-top: 5px;
+}
+
+.text-description {
+    margin: 20px 0 0 -10px; 
+    font-size: small;
+}
+
+.text-location {
+    opacity: 0.60;
+    font-size: small;
 }
 
 .container {
     padding: 0.01em 16px;
-}
-
-.display-bottomleft {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.opacity {
-    opacity: 0.60;
 }
 
 .container .btn {
@@ -79,17 +75,16 @@
     color: white;
 }
 
-.icon {
-    background-image: url('~/GitHubProjects/BlocHacks18/frontend/src/assets/dollar-sign.png');
-    height: 20px;
-    width: 20px;
-    display: block;
-}
-
 hr {
     border: 0;
     border-top: 1px solid #eee;
     margin: 20px 0;
+}
+
+.categoryicon {
+    float: right; 
+    width: 20px; 
+    height: 20px;
 }
 
 .row-padding:after, .row-padding:before {content:"";display:table;clear:both;}
