@@ -24,4 +24,24 @@ export class RequestListComponent implements OnInit {
       });
   }
 
+  radioCategoryHandler(event: any) {
+    this.getRequests();
+    let num;
+    let list: RequestModel[] = [];
+    for (num = 0; num < this.requestList.length; num++) {
+      if (this.requestList[num].category === event.target.value) {
+        list.push(this.requestList[num]);
+      }
+    }
+
+    this.requestList = list;
+  }
+
+  radioCostHandler(event: any) {
+    if (event.target.value === 'increasing') {
+      this.requestList.sort();
+    } else {
+
+    }this.requestList.sort();
+  }
 }
