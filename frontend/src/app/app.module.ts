@@ -11,6 +11,13 @@ import { RequestDetailsContentComponent } from './request-details/request-detail
 
 import { AgmCoreModule } from '@agm/core';
 import { NavbarComponent } from './navbar/navbar.component';
+import {Routes, RouterModule} from "@angular/router"
+import {HttpModule} from '@angular/http'
+
+const routes: Routes = [
+  {path: '', component: RequestListComponent},
+  {path: 'details', component: RequestDetailsComponent}
+];
 
 @NgModule({
   declarations: [
@@ -24,6 +31,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(routes),
+    HttpModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDBkh1YIOLKzCAiaucNZ85GmlxihDVgKM0'
