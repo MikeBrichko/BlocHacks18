@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestgetterService } from '../requestgetter.service';
+
+import { RequestModel } from '../shared/request.model';
 
 @Component({
   selector: 'app-request-details',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RequestDetailsComponent implements OnInit {
 
-  constructor() { }
+  requestList : RequestModel[];
+
+  constructor(private requestgetterService: RequestgetterService) { }
 
   ngOnInit() {
   }
+
+  getRequests() {
+    this.requestgetterService.getRequests()
+      .subscribe((data: RequestModel[]) => {
+        this.requestList = data;
+        console.log(this.requestList);
+      });
+    
+  }
+
 
 }
