@@ -25,7 +25,6 @@ export class RequestListComponent implements OnInit {
     this.requestgetterService.getRequests()
       .subscribe((data: RequestModel[]) => {
         this.requestList = data;
-        console.log(this.requestList);
       });
     
   }
@@ -34,9 +33,7 @@ export class RequestListComponent implements OnInit {
     this.usergetterService.getUsers()
       .subscribe((data: UserModel[]) => {
         this.userList = data;
-        console.log(this.userList);
       });
-    
   }
 
   findUserById(userId){

@@ -15,7 +15,7 @@ export class RequestgetterService {
     return this.http.get('https://blochacks2018.herokuapp.com/requests');
   }
 
-  getRequestById(userId){
-    return this.http.get('https://blochacks2018.herokuapp.com/requests/'+userId);
+  getRequestById(requestId){
+    return this.http.get('https://blochacks2018.herokuapp.com/request/'+requestId);
   }
 }
