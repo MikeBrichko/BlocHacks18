@@ -1,0 +1,98 @@
+.cardbackground {
+    width: 100%;
+    color: black;
+    background-color: #f1f1f1!important; 
+}
+
+.margin-top {
+    margin-top: 16px!important;
+}
+
+.row-padding, .row-padding>.third, .row-padding>.twothird  {
+    padding: 0 8px;
+}
+
+.third {
+    float: left;
+    width: 33.33333%;
+}
+
+.twothird {
+    float: left;
+    width: 66.66666%;
+}
+
+.white {
+    color: #000!important;
+    background-color: #fff!important;
+}
+
+.text-grey {
+    color: #757575!important;
+}
+
+.shadow1 {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.shadow2 {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.userpic {
+    position: relative;
+}
+
+.text-black {
+    color: #000!important;
+}
+
+.container {
+    padding: 0.01em 16px;
+}
+
+.display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.opacity {
+    opacity: 0.60;
+}
+
+.container .btn {
+    position: absolute;
+    background-color:#f0f0f0;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0;
+    font-size: x-small;
+}
+
+.container .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.icon {
+    background-image: url('~/GitHubProjects/BlocHacks18/frontend/src/assets/dollar-sign.png');
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.row-padding:after, .row-padding:before {content:"";display:table;clear:both;}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
