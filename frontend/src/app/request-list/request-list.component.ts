@@ -39,4 +39,10 @@ export class RequestListComponent implements OnInit {
     
   }
 
+  findUserById(userId){
+    return this.userList.find(obj => {
+      return obj.userId === userId;
+    })
+  }
+
 }

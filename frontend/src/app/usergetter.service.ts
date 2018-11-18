@@ -14,6 +14,6 @@ export class UsergetterService {
   }
 
   getUsers(){
-    return this.http.get('users');
+    return this.http.get('https://blochacks2018.herokuapp.com/users');
   }
 }

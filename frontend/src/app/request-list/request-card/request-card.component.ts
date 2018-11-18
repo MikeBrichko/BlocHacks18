@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {RequestModel} from '../../shared/request.model';
+import { UserModel } from '../../shared/user.model';
 
 @Component({
   selector: 'app-request-card',
@@ -8,6 +9,8 @@ import {RequestModel} from '../../shared/request.model';
 })
 export class RequestCardComponent implements OnInit {
   @Input() request: RequestModel;
+  @Input() user: UserModel;
+
   constructor() { }
 
   ngOnInit() {
