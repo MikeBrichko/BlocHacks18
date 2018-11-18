@@ -1,0 +1,17 @@
+agm-map {
+    height: 300px;
+}
+
+.request-details-content__location-container{
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 801px){
+
+}
+@media only screen and (max-width: 800px){
+    .request-details-content{
+        border: none;
+        border-top: thin solid lightgray;
+    }
+}

@@ -8,7 +8,30 @@
     text-align: center;
     padding: 1rem;
 }
-.bio-container{
-    width: 20rem;
-    margin-right: 2rem;
+
+.request-details-content__title-container__button{
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-top:1rem;
+}
+
+@media only screen and (min-width:801px){
+    .bio-container{
+        width: 20rem;
+        margin-right: 2rem;
+    }
+    .request-details-content__title-container__button{
+        width: 20rem;
+    }
+}
+@media only screen and (max-width: 800px){
+    .bio-container{
+        width: 100%;
+        border: none;
+    }
+    .request-details-content__title-container__button{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
