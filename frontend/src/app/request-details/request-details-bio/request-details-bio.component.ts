@@ -11,6 +11,7 @@ import { UsergetterService } from '../../usergetter.service';
 export class RequestDetailsBioComponent implements OnInit {
 
   user : UserModel = {
+    userId: 0,
     name:"Mike Brichko",
     country: "Russia", 
     bio:  "Born and raised in Mother Russia where I fought bears and drank a lot of spicy water.",
