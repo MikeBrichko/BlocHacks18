@@ -1,20 +1,21 @@
-<div class="bio-container card card-body">
-  <div class="bio-container__image-container">
-    <img [src]="user.picture" class="bio-container__image">
-  </div>
-  <div class="bio-container__name">
-    <h4 class="card-title">{{user.name}}</h4>
-  </div>
-  <div class="bio-container__country card-text">
-    <p>{{user.country}}</p>
-  </div>
-  <div class="bio-container__bio">
-    <p>{{user.bio}}</p>
+<div class="background">
+  <div class="bio-container card card-body">
+    <div class="bio-container__image-container">
+      <img [src]="user.picture" class="bio-container__image">
+    </div>
+    <div class="bio-container__name">
+      <h4 class="card-title">{{user.name}}</h4>
+    </div>
+    <div class="bio-container__country card-text">
+      <p>{{user.country}}</p>
+    </div>
+    <div class="bio-container__bio">
+      <p>{{user.bio}}</p>
+    </div>
+
   </div>
 
+  <button type="button" class="btn btn-warning request-details-content__title-container__button">SUPPORT</button>
 </div>
-
-<button type="button" class="btn btn-warning request-details-content__title-container__button">SUPPORT</button>
-
 
 

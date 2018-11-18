@@ -11,9 +11,12 @@
         <div class="twothird" style="padding: 5px;">
           <div class="container shadow2 white" style="position: relative;">
             <h2 class="text-black" style="font-size: x-large; margin-top: 5px;">
-                <button class="btn" style="right: 0; margin-right: 5px;" [routerLink]="['/details']">See Details</button>
               {{request.title}}
-              <img src="assets/dollar-sign.png" alt="icon" style="float: right; width: 20px; height: 20px; margin-right: 50px;">
+              <img *ngIf="request.category==='Food'" src='assets/food.png' alt="food" style="float: right; width: 20px; height: 20px;">
+              <img *ngIf="request.category==='Education'" src='assets/education.png' alt="education" style="float: right; width: 20px; height: 20px;">
+              <img *ngIf="request.category==='Medical'" src='assets/redcross.png' alt="medical" style="float: right; width: 20px; height: 20px;">
+              <img *ngIf="request.category==='Clothes'" src='assets/shirt.png' alt="shirt" style="float: right; width: 20px; height: 20px;"> 
+              <img *ngIf="request.category==='Other'" src='assets/other.png' alt="other" style="float: right; width: 20px; height: 20px;">
             </h2>
             <h5 class="opacity" style="font-size: small;">
               <b>{{request.location}}</b>
@@ -21,6 +24,7 @@
             <div class="container">
               <h6 class="text-black" style="margin: 20px 0 0 -10px; font-size: small;">{{request.description}}</h6>
               <hr>
+              <button class="btn" style="right: 0; margin: -18px 5px;" [routerLink]="['/details']">See Details</button>
             </div>
           </div>
         </div>
